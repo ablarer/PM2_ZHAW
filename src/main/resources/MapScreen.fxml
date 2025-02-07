@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="amba.MapScreenController"
+      stylesheets="@MapScreenBackground.css"
+      spacing="10"
+      alignment="CENTER">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <!-- GridPane für die 9 ImageViews (Feinde auf der Karte) -->
+    <GridPane hgap="10" vgap="10" alignment="CENTER">
+        <children>
+            <ImageView fx:id="imageView1" GridPane.rowIndex="0" GridPane.columnIndex="0" fitWidth="100" fitHeight="100"/>
+            <ImageView fx:id="imageView2" GridPane.rowIndex="0" GridPane.columnIndex="1" fitWidth="100" fitHeight="100"/>
+            <ImageView fx:id="imageView3" GridPane.rowIndex="0" GridPane.columnIndex="2" fitWidth="100" fitHeight="100"/>
+
+            <ImageView fx:id="imageView4" GridPane.rowIndex="1" GridPane.columnIndex="0" fitWidth="100" fitHeight="100"/>
+            <ImageView fx:id="imageView5" GridPane.rowIndex="1" GridPane.columnIndex="1" fitWidth="100" fitHeight="100"/>
+            <ImageView fx:id="imageView6" GridPane.rowIndex="1" GridPane.columnIndex="2" fitWidth="100" fitHeight="100"/>
+
+            <ImageView fx:id="imageView7" GridPane.rowIndex="2" GridPane.columnIndex="0" fitWidth="100" fitHeight="100"/>
+            <ImageView fx:id="imageView8" GridPane.rowIndex="2" GridPane.columnIndex="1" fitWidth="100" fitHeight="100"/>
+            <ImageView fx:id="imageView9" GridPane.rowIndex="2" GridPane.columnIndex="2" fitWidth="100" fitHeight="100"/>
+        </children>
+    </GridPane>
+
+    <!-- Return Button für Navigation -->
+    <HBox alignment="CENTER" spacing="10">
+        <Button fx:id="returnButton" text="Return to Home" onAction="#backToHome" />
+    </HBox>
+</VBox>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="amba.WelcomeScreenController"
+      stylesheets="@WelcomeScreenBackground.css"
+      spacing="10"
+      alignment="CENTER">
+    <children>
+        <!-- ChoiceBox für die Learning Packages -->
+        <ChoiceBox fx:id="learningPackagesBox" />
+
+        <!-- Button zum Starten -->
+        <Button fx:id="startButton" text="Start" />
+
+        <!-- Button zum Import der Learning Packages -->
+        <Button fx:id="importButton" text="Load Packages" onAction="#importLearningPackage" />
+    </children>
+</VBox>
